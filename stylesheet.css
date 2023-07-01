@@ -62,17 +62,6 @@ body{
   line-height: 1.8rem;
 }
 
-#firstRating{
-  margin-left: 14rem;
-}
-
-#secondRating{
-  margin-left: 18rem;
-}
-
-#thirdRating{
-  margin-left: 22rem;
-}
 
 /*rating*/
 
@@ -101,4 +90,71 @@ body{
 display: flex;
 flex-direction: column;
 gap: 1rem;
+}
+
+#firstRating{
+  margin-left: 14rem;
+}
+
+#secondRating{
+  margin-left: 18rem;
+}
+
+#thirdRating{
+  margin-left: 22rem;
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    width: 28rem;
+    justify-content: flex-start;
+    padding: 1rem 1rem;
+  }
+  /*text*/
+  .text{
+    width: 20rem;
+  }
+  /*card*/
+  .card{
+    width: 20rem;
+    padding: .8rem;
+  }
+  /*rating*/
+  .rating{
+    width: 20rem;
+    gap: 1rem;
+    padding: .8rem;
+  }
+  .rating img{
+    width: 0.8rem;
+    height: .8rem;
+  }
+  .rating h4{
+    font-size: 1rem;
+  }
+  #firstRating{
+    margin-left: 0rem;
+  }
+
+  #secondRating{
+    margin-left: 0rem;
+  }
+
+  #thirdRating{
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #firstRating{
+    margin-left: 0rem;
+  }
+
+  #secondRating{
+    margin-left: 0rem;
+  }
+
+  #thirdRating{
+    margin-left: 0rem;
+  }
 }
